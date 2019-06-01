@@ -1,0 +1,204 @@
+/* https://www.colourlovers.com/palette/1940467/222 */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;    
+    display: grid;
+}
+
+body {
+    max-width: 100%;
+    margin: auto;
+    min-height: 100%;
+    grid-template-columns: 100%;
+    text-rendering: optimizeLegibility;
+    background-color: black;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #F3702A;
+}
+
+h2 {
+    color: #D0BE9D;
+}
+
+section {
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+
+
+.hide {
+    display: none !important;
+}
+
+header {
+    margin: 10em 10em 0 10em;
+}
+
+header h1 {
+    text-shadow: 2px 2px 2px rgba(26, 26, 26, 0.8);
+    font-size: 5em;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-style: normal;
+}
+
+header h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: .8em;
+}
+
+header #signin {
+    margin-top: 2em;
+}
+
+footer {
+    font-size: xx-small;
+}
+
+footer video {
+    width: 100%;
+    z-index: 0;
+}
+
+.userProfile {
+  position: relative;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #141414;
+  text-align: left;
+  line-height: 1.4em;
+  font-size: 14px;
+  box-shadow: none !important;
+  float: right;
+  position: absolute; 
+  top: 0;
+  right: 0;
+  transform: scale(0.8);
+}
+
+.userProfile * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.userProfile .profile-image {
+  width: 26%;
+}
+
+.userProfile .profile-image img {
+  border-radius: 5px;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.userProfile .profile-image,
+.userProfile figcaption {
+  float: right;
+}
+
+.userProfile figcaption {
+  width: 70%;
+  background-color: #333333;
+  color: #fff;
+  padding: 15px;
+  display: inline-block;
+  margin-right: 4%;
+  border-radius: 5px;
+}
+
+.userProfile figcaption:after {
+  content: '';
+  position: absolute;
+  left: 70%;
+  top: 30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #333333;
+}
+
+.userProfile h3,
+.userProfile h4,
+.userProfile p {
+  margin: 0 0 5px;
+}
+
+.userProfile h4 {
+  color: #8c8c8c;
+  font-size: small;
+}
+
+
+
+
+
+
+
+
+#loader {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#loader small {
+    display: block;
+}
+
+.loader {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.loader div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin: 6px;
+    border: 6px solid red;
+    border-radius: 50%;
+    animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: red transparent transparent transparent;
+}
+
+.loader div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.loader div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.loader div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
